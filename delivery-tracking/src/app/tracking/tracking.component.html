@@ -1,0 +1,18 @@
+<div class='timeline-container'>
+  <button (click)='passStep()'>Next Step</button>
+  <ul class='timeline-row'>
+    <li *ngFor='let step of steps' [class.happened]='step.happened'>
+      <p class='description'>
+          <span>
+            {{step.description}}
+          </span>
+      </p>
+      <p>
+        {{step.name}}
+      </p>
+    </li>
+  </ul>
+</div>
+<div *ngIf='order'>
+  <app-order-details [order]='order'></app-order-details>
+</div>

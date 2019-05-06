@@ -1,0 +1,29 @@
+img {
+  width: 200px;
+  margin: 15px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+p span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.connect-container, .order-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.connect-container div {
+  width: 100%;
+}
+
+.connect-container {
+  padding: 15px 0;
+}

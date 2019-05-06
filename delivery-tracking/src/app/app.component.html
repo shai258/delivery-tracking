@@ -1,0 +1,10 @@
+<h1>Delivery-Tracking</h1>
+<img class='logo' src='../assets/images/logo.png' alt=''>
+<h3>Admin Tools</h3>
+<button (click)='createNewOrder()' routerLink=''>Create New Order</button>
+<nav>
+  <div *ngIf='order'>
+    <a routerLink='/orders/{{order.orderNumber}}'>Show Order Tracking</a>
+  </div>
+  <router-outlet></router-outlet>
+</nav>
